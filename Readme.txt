@@ -8,7 +8,7 @@ The synteny analysis itself is described in the associated manuscript Methods. T
 
 mcscanx-collinearity-plotting/
 ├── README.md
-├── 01_parsing_mcscanx_collinearity.R
+├── 01_parsing_mcscanx_collinearity_data.R
 ├── 02_plot_synteny.R
 ├── data/
 │   ├── Cal_Dmel.collinearity.9
@@ -19,7 +19,7 @@ mcscanx-collinearity-plotting/
     └── synteny_circos_plot.pdf
 
 R scripts:
-1. 01_parsing_mcscanx_collinearity.R converts the MCScanX .collinearity output into a simplified link table by extracting each alignment block’s chromosome/scaffold pair and the syntenic gene pairs listed within that block.
+1. 01_parsing_mcscanx_collinearity_data.R converts the MCScanX .collinearity output into a simplified link table by extracting each alignment block’s chromosome/scaffold pair and the syntenic gene pairs listed within that block.
 2. 02_plot_synteny.R uses the parsed synteny link table, gene coordinate file, scaffold length file, and optional highlight regions to generate a circular synteny plot with the R package circlize
 
 Data files:
